@@ -15,3 +15,13 @@ window.addEventListener("scroll", function(){
     }
 
 });
+
+const navbarCollapse = document.getElementById("navbarNav");
+
+navbarCollapse.addEventListener("shown.bs.collapse", function () {
+    document.body.style.overflow = "hidden";
+});
+
+navbarCollapse.addEventListener("hidden.bs.collapse", function () {
+    document.body.style.overflow = "auto";
+});
